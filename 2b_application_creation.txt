@@ -1,0 +1,17 @@
+theia@theiadocker-ap00rva07310:/home/project$ cd final_project
+theia@theiadocker-ap00rva07310:/home/project/final_project$ python3 -m pip install requests
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: requests in /home/theia/.local/lib/python3.10/site-packages (2.33.1)
+Requirement already satisfied: urllib3<3,>=1.26 in /home/theia/.local/lib/python3.10/site-packages (from requests) (2.6.3)
+Requirement already satisfied: charset_normalizer<4,>=2 in /home/theia/.local/lib/python3.10/site-packages (from requests) (3.4.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/theia/.local/lib/python3.10/site-packages (from requests) (3.11)
+Requirement already satisfied: certifi>=2023.5.7 in /home/theia/.local/lib/python3.10/site-packages (from requests) (2026.2.25)
+theia@theiadocker-ap00rva07310:/home/project/final_project$ python3
+Python 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from emotion_detection import emotion_detector
+>>> text = "I love this new technology."
+>>> result = emotion_detector(text)
+>>> print(result)
+{"emotionPredictions":[{"emotion":{"anger":0.01364663, "disgust":0.0017160787, "fear":0.008986978, "joy":0.9719017, "sadness":0.055187024}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":27, "text":"I love this new technology."}, "emotion":{"anger":0.01364663, "disgust":0.0017160787, "fear":0.008986978, "joy":0.9719017, "sadness":0.055187024}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}
+>>> 

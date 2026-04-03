@@ -1,0 +1,16 @@
+theia@theiadocker-ap00rva07310:/home/project$ cd /home/project/final_project/oaqjp-final-project-emb-ai
+python3 test_emotion_detection.py
+Text: I am glad this happened
+Expected: joy, Got: joy
+Text: I am really mad about this
+Expected: anger, Got: anger
+Text: I feel disgusted just hearing about this
+Expected: disgust, Got: disgust
+Text: I am so sad about this
+Expected: sadness, Got: sadness
+Text: I am really afraid that this will happen
+Expected: fear, Got: fear
+
+All tests passed!
+theia@theiadocker-ap00rva07310:/home/project/final_project/oaqjp-final-project-e
+mb-ai$ 
